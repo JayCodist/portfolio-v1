@@ -1,0 +1,333 @@
+body {
+    margin: 0 auto;
+}
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/donation.png) no-repeat;
+    background-size: cover;
+    padding-bottom: 4em;
+}
+
+.donationOptions {
+  background-color: #210645;
+  color: #FFF;
+}
+
+.donationOptions h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #D8DDF0;
+}
+
+.donationButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  margin: 1em auto;
+}
+
+.donationAmount {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.donationAmount label {
+  margin-top: 1em;
+}
+
+.donationOption {
+  display: flex;
+  flex-direction: column;
+}
+
+.donationOption div {
+  border: 1px solid #FFF;
+  padding: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em 3em;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.right a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 500;
+  padding: 8px 16px;
+}
+
+#donation-link {
+  text-decoration: underline;
+	text-decoration-color: white;
+	text-decoration-line: 5px;
+}
+
+.right a:hover {
+	transform: scale(1.05);
+	color: rgb(200, 200, 200);
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-info {
+  color: #FFF;
+}
+
+.main-info > div {
+  font-size: 64px;
+  line-height: 96px;
+  font-weight: 600;
+}
+
+.donationFrequency {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.donationFrequency div {
+  border: 1px solid #FFF;
+  padding: 1em;
+  width: 70%;
+}
+
+.footer {
+	height: 150px;
+	background-color: rgb(74, 60, 103);
+	display: flex;
+	flex-direction: row;
+	color: white;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer  h3 {
+	font-weight: 100;
+	margin: 20px auto;
+}
+
+.footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link-list {
+	display: flex;
+	flex-direction: column;
+}
+
+#links-div {
+	height: 100%;
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#go-to-top
+{
+	cursor: pointer;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border: 1px solid white;
+	transition: 0.4s ease-out;
+}
+#go-to-top:hover {
+	background-color: rgba(224, 200, 203, 0.3);
+}
+#go-to-top > div {
+	width: 20px;
+	height: 20px;
+	margin: 17px auto;
+	border-top: 1px solid white;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-left: 1px solid white;
+	transform: rotate(45deg);
+}
+
+#social-media {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#social-media a > img {
+	height: 30px;
+}
+
+#social-media a {
+	border-radius: 3px;
+	display: block;
+	border: 1px solid transparent;
+	padding: 5px 10px;
+}
+
+#social-media a:hover {
+	border: 1px solid white;
+}
+
+/* Donations Progress Bar code*/
+.progress-bg {
+  margin: 0 auto;
+  width: 65%;
+  height: 78px;
+  border-radius: 10px;
+  text-align: center;
+  background: url("http://www.atsu.edu/stlclinic/images/progress-bar-bg.jpg") repeat;
+  -moz-box-shadow: inset 0 0 10px #ccc;
+  -webkit-box-shadow: inset 0 0 10px #ccc;
+  box-shadow: inset 0 0 10px #ccc;
+}
+
+.progress-bar {
+  height: 78px;
+  border-radius: 10px;
+  float: left;
+  width: 50%;
+  /* fallback */ 
+  background-color: #1c314a; 
+  
+  /* Safari 4-5, Chrome 1-9 */ 
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+  
+  /* Safari 5.1, Chrome 10+ */ 
+  background: -webkit-linear-gradient(top, #1c314a, #27425f); 
+  
+  /* Firefox 3.6+ */ 
+  background: -moz-linear-gradient(top, #1c314a, #27425f); 
+  
+  /* IE 10 */ 
+  background: -ms-linear-gradient(top, #1c314a, #27425f); 
+  
+  /* Opera 11.10+ */ 
+  background: -o-linear-gradient(top, #1c314a, #27425f);	
+}
+
+.progress-bg h3.goal, .progress-bg h3.raised {
+  font-family: Arial,sans-serif;
+  font-size: 2.7em;
+  font-weight: 600;
+  line-height: 78px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: inline;
+}
+
+
+.progress-bg h3.raised {
+  color: #fff;
+  margin: 14px 25px 0 50px;
+  padding: 0 25px 0 0;
+}
+
+.progress-bg h3.goal {
+  color: #b2b2b2;
+  text-align: center;
+}
+
+body .progress-bg h3.raised {
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -moz-animation: fadein 4s; /* Firefox */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera */
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}​
+
+.progress-bg h3.goal {
+  float: right;
+  display: inline;
+  padding: 0 25px 0 0;
+  text-align: center;
+}
+
+body .progress-bg div {
+  -webkit-animation: progress-bar 2s ease forwards;
+  -moz-animation: progress-bar 2s ease forwards;
+  -o-animation: progress-bar 2s ease forwards;
+  animation: progress-bar 2s ease forwards;
+}
+
+@-webkit-keyframes progress-bar {
+  from { width: 0%; }
+  to { width: 50%; }
+}
+
+@-moz-keyframes progress-bar {
+  from { width: 0%; }
+  to { width: 50%; }
+}
+
+@-o-keyframes progress-bar {
+  from { width: 0%; }
+  to { width: 50%; }
+}
+
+@keyframes progress-bar {
+  from { width: 0%; }
+  to { width: 50%; }
+}
+
+.D1 {
+  padding:20px;
+  margin:20px 0;
+  text-align: center
+}
+  

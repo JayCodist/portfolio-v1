@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./styles/donation.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400&amp;display=swap" rel="stylesheet">
+    <title>Donation</title>
+</head>
+<body>
+    <div class="container">
+        <section id="header">
+            <div class="nav">
+                <div class="left">
+                    <img id="logo" src="images/logo-white.png" height="60px" width="180px" alt="logo">
+                </div>
+    
+                <div class="right">
+                    <div><a href="index.html">HOME</a></div>
+                    <div><a href="About Us Page/about.html">ABOUT US</a></div>
+                    <div id="donation-link"><a href="#">DONATIONS</a></div>
+                    <div><a href="event.html">EVENTS</a></div>
+                    <div><a href="team.html">TEAM</a></div>
+                    <div><a href="contact.html">CONTACT US</a></div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="donationOptions">
+                    <h1>Choose a donation amount</h1>
+                    <div class="donationOption">
+                        <div><input type="radio" name="amount" value="5" /> <span>₦5</span> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></div>
+                        <div><input type="radio" name="amount" value="10" /> <span>₦10</span> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></div>
+                        <div><input type="radio" name="amount" value="20" /> <span>₦20</span> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></div>
+                    </div>
+                    <div class="donationAmount">
+                        <label>Enter a custom amount <input type="text" id="amount"></label>
+                        <label>Enter your email <input type="email" id="email"></label>
+                        <label>Enter your first name <input type="text" id="firstname"></label>
+                        <label>Enter your last name <input type="text" id="lastname"></label>
+                        <label>Enter your phone number <input type="tel" id="phone"></label>
+                    </div>
+                    <h1>Choose a donation frequency</h1>
+                    <div class="donationFrequency">
+                        <div><input type="checkbox" /> <span>Monthly</span></div>
+                        <div><input type="checkbox" /> <span>One Time</span></div>
+                    </div>
+                    <div class="donationButton">
+                        <button onclick="payWithRave()">Go to checkout</button>
+                    </div>
+                </div>
+                <div class="main-info">
+                    <div>TOGETHER</div>
+                    <div>WE CAN</div>
+                    <div>GIVE THE</div>
+                    <div>CHILDREN</div>
+                    <div>EDUCATION</div>
+                </div>
+            </div>
+        </section>
+        <!-- Donations Progress Bar -->
+        <div class="D1">
+            <h1>HELP US REACH OUR GOAL OF N100,000 FOR THE SCHOOL BAG PROJECT</h1>
+            <p>Your gifts, both large and small, will help us to achieve our mission of supporting excellence in education.</p>
+            <p>Thank you in advance for your generous support that allows us to make a difference in the lives of thousands of students each year.
+            </p>
+
+
+            <div class="progress-bg">
+                <div class="progress-bar">
+                    <h3 class="raised">N50,000&nbsp;raised </h3>
+                </div>
+                    
+                <h3 class="goal">Goal: N100,000</h3>
+            </div>
+        </div>
+
+        <section class="footer">
+            <div>
+                <img src="images/logo-white.png" height="50px" width="200px">
+                <div id="social-media">
+                    <a href=""><img src="images/twitter.png"></a>
+                    <a href=""><img src="images/facebook.png"></a>
+                    <a href=""><img src="images/instagram.png"></a>
+                </div>
+                </div>
+                <div id="links-div">
+                    <div>
+                        <h3>COMPANY</h3>
+                        <div class="link-list">
+                            <a href="">About EAF</a>
+                            <a href="">Contact us</a>
+                            <a href="">FAQ</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>DONATE</h3>
+                        <div class="link-list">
+                            <a href="">Features</a>
+                            <a href="">Pricing</a>
+                            <a href="">Videos</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>LEGAL</h3>
+                        <div class="link-list">
+                            <a href="">Security</a>
+                            <a href="">Privacy</a>
+                            <a href="">Terms and conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><div id="go-to-top"><div></div></div></a>
+                </div>
+        </section>
+    
+    </div>
+
+    <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+    <script src="./scripts/donation.js"></script>
+</body>
+</html>

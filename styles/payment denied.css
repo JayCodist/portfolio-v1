@@ -1,0 +1,124 @@
+/* .pay{background-color: #fff;
+background-image: -webkit-linear-gradient(45deg,#efefef 25%,transparent 25%,transparent 75%,#efefef 75%,#efefef),-webkit-linear-gradient(45deg,#efefef 25%,transparent 25%,transparent 75%,#efefef 75%,#efefef);
+background-position: 0 0,10px 10px;
+-webkit-background-size: 21px 21px;
+border: 0;
+vertical-align: middle;
+text-align: center;
+box-sizing: border-box;
+} */
+ 
+*{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    box-sizing: border-box;
+}
+
+h4 p h3{
+    text-align: center;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*#navbar{
+    background: #2E1F3E;
+    color: #fff;
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0;
+    
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+    
+}*/
+
+.pay{
+   /* display: inline-block; removed inline-block as it prevented centering */
+/* removed the width element width: 25% and set it as a fixed-width of 400px */
+    padding: 20px 20px ;
+/* changed the padding dimensions to 20px 20px 20px 20px*/
+    margin: 0 auto ;
+/*changed the margin to 0% auto*/
+    text-align: center;
+    width: 400px ;
+    box-shadow: 0  20px 5px rgba(37, 73, 214, 0.18);
+    background-color: white;
+}
+
+.same{
+    font-size: 15px;
+}
+
+.active{
+    border-radius: 12px;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    width: 200px;
+    background-color: #2E1F3E;
+    
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0fr;
+    align-items: center;
+    height: 10vh;
+    padding: 0 10%;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-purple);
+    padding: 0 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li a:hover{
+    color: var(--primary-pink);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primary-purple: #2e1f3e;
+    --primary-pink:#d13b87 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* logo section */
+.img{
+    width: 100px;
+}
+
+.img img{
+    width: 100%;
+}
