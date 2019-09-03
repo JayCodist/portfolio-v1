@@ -1,4 +1,4 @@
-const checkEmail = email => /[a-z]+\d*@[a-z]+/i.test(email);
+const checkEmail = email => /[a-z]+\d*@[a-z]+/i.test(email); 
 
 document.getElementById("form-submit").addEventListener("click", e =>
 {
