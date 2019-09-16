@@ -8,6 +8,7 @@ body
     width: 100%;
     --orange: darkorange;
     --hr-width: 300px;
+    --red: rgb(200, 30, 30);
 }
 form > *
 {
@@ -28,6 +29,23 @@ hr
 {
     border: 0.5px solid black;
     width: var(--hr-width);
+}
+.err-msg
+{
+    color: var(--red);
+    border: 2px solid var(--red);
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+}
+.err-msg::before
+{
+    content: " ";
+    position: absolute;
+    border: 10px solid var(--red);
+    right: 100%;
+    top: 20%;
+    border-color: transparent var(--red) transparent transparent;
 }
 .input
 {
@@ -155,8 +173,20 @@ hr
 {
     padding-right: 45px;
 }
-
-
+#email-not-exist
+{
+    display: none;
+    width: 150px;
+    left: 74vw;
+    top: 33vh;
+}
+#wrong-password
+{
+    display: none;
+    width: 150px;
+    left: 74vw;
+    top: 49vh;
+}
 
 
 #signup
@@ -183,6 +213,13 @@ hr
     color: white;
     width: 70%;
     margin: 20px auto 80px;
+}
+#email-exists
+{
+    display: none;
+    width: 150px;
+    left: 72vw;
+    top: 45vh;
 }
 #signup-login-button
 {

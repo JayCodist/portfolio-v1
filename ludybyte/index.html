@@ -23,10 +23,12 @@
 				<label for="login-email">* Email</label>
 				<input placeholder="Enter your email" type="email" id="login-email" name="email" required
 					class="input text-input" />
+				<div id="email-not-exist" class="err-msg">The email has not been signed up<br />Maybe you want to sign up?</div>	
 	
 				<label for="login-password">* Password</label>
 				<input placeholder="Enter your password" type="password" id="login-password" name="password" required
 					class="input text-input" />
+				<div id="wrong-password" class="err-msg">The password you entered does not match</div>
 				<br />
 				<hr />
 				<button type="submit" id="login-login-button">SIGN IN</button>
@@ -54,6 +56,7 @@
 				<label for="signup-email">* Email</label>
 				<input placeholder="Enter your email" type="email" id="signup-email" name="email" required
 					class="input text-input" />
+				<div id="email-exists" class="err-msg">The email is already signed up! <br />Maybe you want to login?</div>
 	
 				<label for="signup-password">* Password</label>
 				<input placeholder="Enter your password" type="password" id="signup-password" name="password" required
