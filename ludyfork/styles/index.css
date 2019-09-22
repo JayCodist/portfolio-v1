@@ -117,7 +117,7 @@ hr
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    max-height: var(--height);   
+    height: var(--height);
     position: absolute;
     border-right: 5px solid black;
 }
@@ -304,8 +304,7 @@ hr
 
 
 /* Media queries */
-@media screen and (max-width: 500px)
-{
+@media (max-width: 800px) {
     :root
     {
         --small-font: 14px;
@@ -435,5 +434,4 @@ hr
         background-color: rgb(150, 150, 150);
         padding-right: 35px;
     }
-
 }

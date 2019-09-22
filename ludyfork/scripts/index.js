@@ -7,7 +7,8 @@ const backend = "http://localhost:3000";
 
 // Ping heroku host to "wake" it. The hosted API on heroku sleeps after inactive interval and takes
 // around 15 seconds to wake. So ping it during pageload to start awakening and speed up the process
-fetch(backend);
+if (backend !== "http://localhost:3000") 
+	fetch(backend);
 
 // SIGN UP
 document.getElementById("signup-signup-button").addEventListener("click", e => 
