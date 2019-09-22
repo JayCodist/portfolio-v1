@@ -102,22 +102,34 @@ document.getElementById("signup-email").addEventListener("input", () =>
 document.getElementById("login-signup-button").addEventListener("click", e => 
 {
 	e.preventDefault();
-	document.getElementById("login").style.left = "0";
-	document.getElementById("signup").style.left = "100vw";
-	document.getElementById("login").className = "left-shift";
-	document.getElementById("signup").className = "left-shift";
+	const login = document.getElementById("login");
+	const signup = document.getElementById("signup");
+	login.style.left = "0";
+	signup.style.left = "100vw";
+	signup.style.display = "flex";
+	login.className = "left-shift";
+	signup.className = "left-shift";
 
 	// Pass focus to the #name element after animation
-	setTimeout(() => document.getElementById("signup-name").focus(), 1300);
+	setTimeout(() => {
+		login.style.display = "none";
+		document.getElementById("signup-name").focus()
+	}, 1300);
 });
 document.getElementById("signup-login-button").addEventListener("click", e => 
 {
 	e.preventDefault();
-	document.getElementById("login").style.left = "-100vw";
-	document.getElementById("signup").style.left = "0";
-	document.getElementById("signup").className = "right-shift";
-	document.getElementById("login").className = "right-shift";
+	const login = document.getElementById("login");
+	const signup = document.getElementById("signup");
+	login.style.left = "-100vw";
+	signup.style.left = "0";
+	login.style.display = "flex";
+	signup.className = "right-shift";
+	login.className = "right-shift";
 
 	// Pass focus to the #email element after animation
-	setTimeout(() => document.getElementById("login-email").focus(), 1300);
+	setTimeout(() => {
+		signup.style.display = "none";
+		document.getElementById("login-email").focus();
+	}, 1300);
 });

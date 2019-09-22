@@ -331,7 +331,7 @@ hr
         flex-direction: column;
         justify-content: flex-start;
         min-height: 130vh;
-        width: 100%;
+        max-width: 100vw;
     }
     #login > section
     {
@@ -386,6 +386,7 @@ hr
 
     #signup
     {
+        display: none;
         left: 100vw;
         position: absolute;
         flex-direction: column;
