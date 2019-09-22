@@ -110,11 +110,7 @@ document.getElementById("login-signup-button").addEventListener("click", e =>
 	login.className = "left-shift";
 	signup.className = "left-shift";
 
-	// Pass focus to the #name element after animation
-	setTimeout(() => {
-		login.style.display = "none";
-		document.getElementById("signup-name").focus()
-	}, 1300);
+	setTimeout(() => login.style.display = "none", 1100);
 });
 document.getElementById("signup-login-button").addEventListener("click", e => 
 {
@@ -127,9 +123,5 @@ document.getElementById("signup-login-button").addEventListener("click", e =>
 	signup.className = "right-shift";
 	login.className = "right-shift";
 
-	// Pass focus to the #email element after animation
-	setTimeout(() => {
-		signup.style.display = "none";
-		document.getElementById("login-email").focus();
-	}, 1300);
+	setTimeout(() => signup.style.display = "none", 1100);
 });
