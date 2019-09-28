@@ -1,1 +1,0 @@
-document.getElementById("back-to-homepage").addEventListener("click", e => location.href = "index.html")
