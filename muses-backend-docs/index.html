@@ -34,7 +34,7 @@
 			<h4>The API allows you to signup, login and (while logged in) perform CRUD (create, read, update and delete) operations on a set of financial <span class="code">items</span> on your account</h4>
 			<em><strong>Note:</strong> In all the examples, you could substitute <span class="code">http://localhost:3000</span> with the <a href="https://muses-nwc-api.herokuapp.com/">hosted API url</a>, if you are not testing locally</em> <br />
 			<br /></section>
-			<em><strong>Note:</strong> In all the examples, handling of data returned by <span class="code">fetch()</span> has been omitted for sake of clarity. A more complete request is usually in the form <span class="code">fetch(...).then(data => data.json()).then(jsonData => // use jsonData here )</span></em>
+			<em><strong>Note:</strong> In all the examples, handling of data returned by <span class="code">fetch()</span> has been omitted for sake of clarity. A more complete request is usually in the form <span class="code">fetch(...).then(data => data.json()).then(jsonData => /* use jsonData here */ ).catch(. . .)</span></em>
 			<h4>To signup, send</h4>
 			<code>
 let data = {"name": "Johnson", "email": "jaycodist@gmail.com", "password": "devlin"};
