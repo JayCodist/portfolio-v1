@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="assets/img/muses.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="general-header">
+      <a href="#" id="logo-link"
+        ><img
+          id="logo"
+          widtr="40px"
+          height="45px"
+          src="assets/img/muses.png"
+          alt="Muses"
+      /></a>
+      <nav>
+        <a href="#"
+          ><img src="assets/img/bell-icon.png" widtr="15px" height="15px"
+        /></a>
+        <a href="#" id="name-plate"></a>
+        <a href="#"
+          ><img
+            widtr="40px"
+            height="45px"
+            src="assets/img/profilepic.png"
+            alt="Muses"
+        /></a>
+      </nav>
+    </header>
+    <aside class="general-sidebar">
+      <div id="mid-icons">
+        <a id="real-estate-icon" href="overview.html"
+          ><span class="tooltiptext">Overview</span
+          ><img src="assets/svg/real-estate-icon.svg"
+        /></a>
+        <a id="graph-icon" href="portfolio.html"
+          ><span class="tooltiptext">Statistics</span
+          ><img src="assets/svg/graph-icon.svg"
+        /></a>
+        <a id="user-icon" class="sidebar-active-link" href="dashboard.html"
+          ><span class="tooltiptext">Profile</span
+          ><img src="assets/svg/user-icon.svg"
+        /></a>
+      </div>
+      <a id="logout-icon"
+        ><span class="tooltiptext">Logout</span
+        ><img src="assets/svg/logout-icon.svg"
+      /></a>
+    </aside>
+    <main id="dashboard-main" class="general-main">
+      <div class="welcome-message">
+        <h1></h1>
+        <h2>We are here to help you keep track of your net worth</h2>
+        <div class="actions">
+          <button class="letsbegin" onclick="location.href='overview.html'">
+            Let's begin
+          </button>
+          <div id="powered-by">
+            Powered by Express|MongoDB REST API, repo <a href="https://github.com/hngi/muses-nwc-api">here</a><br />
+            See documentation <a href="https://jaycodist.github.io/muses-backend-docs">here</a>
+          </div>
+        </div>
+      </div>
+      <div class="welcome-svg">
+        <img src="img/dashboard.svg" alt="dashboard image" style="min-width: 20vw"/>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script type="text/javascript" src="js/dashboard.js"></script>
+<script type="text/javascript" src="js/header-sidebar.js"></script>

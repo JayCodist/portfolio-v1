@@ -1,0 +1,257 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Net Worth Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="assets/img/muses.png">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="landing-header">
+      <div class="nav-bar">
+        <div class="muses-logo">
+          <img src="./assets/img/muses.png" />
+        </div>
+        <nav class="nav-menu">
+        	<a id="home-nav" href="#" class="nav-item">Home</a>
+        	<a href="#faq" class="nav-item">Faq</a>
+        	<a id="login-modal-trigger" class="nav-item">Login</a>
+        	<a id="register-modal-trigger" class="nav-item">Join now</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="landing-body">
+      <section class="upper-section">
+        <div class="intro-text">
+          <h1>
+            Let's calculate <br />
+            your Net Worth
+          </h1>
+          <h6>Keep track of your assets and liabilities with this app</h6>
+
+          <!-- To be turned into a radio slider input later -->
+          <div class="button get-started"></div>
+        </div>
+        <div class="intro-svg">
+          <img src="./assets/img/invest.png" alt="investment" />
+        </div>
+      </section>
+      <section class="howitworks">
+        <h2>Simple and handy process</h2>
+        <span class="divider"></span>
+
+        <!-- To be revisited --> 
+        <div class="process">
+          <div class="process-image">
+            <img src="./assets/img/process.png" alt="" />
+
+            <div class="process-text">
+              <div class="assets">
+                <h4>Assets</h4>
+                <p>We keep track of your assets</p>
+              </div>
+              <div class="liability">
+                <h4>Liability</h4>
+                <p>We keep track of your liabilities</p>
+              </div>
+              <div class="tax-rate">
+                <h4>Tax Rate</h4>
+                <p>We keep track of your tax rates</p>
+              </div>
+              <div class="Investments">
+                <h4>Investments</h4>
+                <p>We keep track of your investments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <!-- <h3 class="offset-text">
+          <div class="divider"></div>
+          “Since I a have been able to track my net-worth i have been able to
+          increase productivity independently”
+        </h3>
+        <div class="weekly-tips">
+          <h3>
+            Get weekly tips on how to improve your net worth!
+          </h3>
+          <form action="" name="email-tips">
+            <input type="email" placeholder="Your email address" />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div> -->
+
+        <div class="faq">
+          <h2>Frequently asked questions</h2>
+          <div class="divider"></div>
+
+          <!-- FAQ ACCORDION TRIGGER -->
+          <div class="faq-accordion">
+            <!-- TRIGGER 1 -->
+            <button class="accordion-trigger">
+              <span class="question">?</span>
+              <p>What is a net worth ?</p>
+              <span class="addition">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>
+                Net worth is a quantitative concept that measures the value of an entity and can be applicable to individuals, corporations, 
+                sectors and even countries. <br>
+                Simply stated, net worth is the difference between assets and liabilities.
+              </p>
+            </div>
+
+            <!-- TRIGGER 2 -->
+            <button class="accordion-trigger">
+              <span class="question">?</span>
+              <p>What are liquid assets?</p>
+              <span class="addition">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>
+                A liquid asset is cash in hand or an asset that can be readily converted to cash.
+                Example of assets that would be considered liquid is Cash. 
+              </p>
+            </div>
+
+            <!-- TRIGGER 3 -->
+            <button class="accordion-trigger">
+              <span class="question">?</span>
+              <p>How is your net worth calculated?</p>
+              <span class="addition">+</span>
+            </button>
+            <div class="faq-panel">
+              <p>
+                Net Worth is everything owned of significance (your assets) minus 
+                what you owe in debts (your liabilities).<br>
+                Net-Worth = Assets - Liabilities
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lower-section">
+        <div class="begin">
+          <i class="fas fa-chart-line"></i>
+          <h4>Ready for this?</h4>
+          <p>Begin now, know your worth</p>
+          <a href="">BEGIN</a>
+        </div>
+        <div class="seedemo">
+          <i class="far fa-lightbulb"></i>
+          <h4>Thinking over it?</h4>
+          <p>Email us or watch a free demo today</p>
+          <a href="">SEE A DEMO</a>
+        </div>
+        <div class="emailsupport">
+          <i class="fas fa-headphones"></i>
+          <h4>Need some help?</h4>
+          <p>Users can email us for support</p>
+          <a href="">EMAIL SUPPORT</a>
+        </div>
+      </section>
+
+      <!-- MODALS -->
+      <div id="login-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="close"><div>&times;</div></div>
+          <form name="login" action="">
+            <h2 id="loginHeader">Log In</h2>
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="email" placeholder="Your email" required />
+            <label for="login-password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="login-password"
+              placeholder="Your Password"
+              required
+            />
+            <div class="stay-signed">
+              <input id="keep-signed-in" type="checkbox" checked/><label for="keep-signed-in">Keep me signed in</label>
+            </div>
+            <a href="404.html">Forgot password?</a>
+            <button id="login-button">
+              <i class="fas fa-unlock"></i>
+              <p>
+                Enter
+              </p>
+            </button>
+            <h4 id="optional-ish">Don't have an account? <a id="login-signup-revert">Sign up</a></h4>
+          </form>
+        </div>
+      </div>
+
+      <div id="register-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="close">&times;</div>
+          <form name="register" action="">
+            <h2 id="registerHeader">Register</h2>
+            <label for="register-firstname">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="register-firstname"
+                placeholder="Your Name"
+                required
+              />
+            <label for="register-email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="register-email"
+              placeholder="Your email"
+              required
+            />
+            <label for="register-password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="register-password"
+                placeholder="Your Password"
+                required
+              />
+            <div class="stay-signed">
+              <input type="checkbox" id="keep-signed-in-reg" checked /><label for="keep-signed-in-reg">Keep me signed in</label>
+            </div>
+            <a href="404.html">Forgot password?</a>
+            <button id="register-button">
+              <i class="fas fa-unlock"></i>
+              <p>
+                Enter
+              </p>
+            </button>
+            <h4 id="optional-ish2">Already have an account? <a id="signup-login-revert">Login</a></h4>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Muses Copyright &copy; 2019
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
