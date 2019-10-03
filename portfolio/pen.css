@@ -60,6 +60,8 @@ nav > a:hover
 	display: block;
 	border-radius: 10px;
 	transition: 0.4s ease;
+	text-decoration: none;
+	padding-bottom: 10px;
 }
 .project-tile:hover > .symbol
 {
