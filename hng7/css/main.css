@@ -6,7 +6,7 @@ padding: 0;
 }
 
 body {
-font-family: "Open sans", Arial, Helvetica, sans-serif;
+font-family: "Open sans", segoe UI, sans-serif;
 
 }
 
@@ -39,17 +39,6 @@ grid-template-areas:
 "main";
 }
 
-header {
-grid-area: header;
-padding: 0 10%;
-}
-
-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
 logo-container {
 
 height: 100%;
@@ -65,30 +54,6 @@ width: 90%;
 list-style-type: none;
 display: inline-block;
 margin-left: 2em;
-}
-
-nav a {
-text-decoration: none;
-font-size: 0.95em;
-color: #474747;
-mix-blend-mode: normal;
-opacity: 0.95;
-}
-
-#join-hng {
-margin: 0;
-padding: 0.5em 1em;
-}
-
-#join-hng a {
-color: #fff;
-font-weight: 500;
-
-}
-
-a:hover {
-text-decoration: none;
-font-weight: bold;
 }
 
 #hamburger {
@@ -224,6 +189,12 @@ color: #333333;
 color: #084482;
 }
 
+@media (max-width: 860){
+  footer {
+    width: auto;
+    padding-left: 5rem;
+  }
+}
 aside {
 position: absolute;
 right: 0;
@@ -374,9 +345,6 @@ margin-right: 1em;
 margin: 1em 0;
 }
 
-p {
-letter-spacing: 0.07em;
-}
 
 .section-2 {
 height: 100%;
@@ -599,11 +567,6 @@ text-align: center;
 padding-bottom: 3em;
 }
 
-footer {
-padding: 50px 0px;
-background-color: #fafafa;
-}
-
 .final {
 display: flex;
 justify-content: space-between;
@@ -631,31 +594,6 @@ padding: 10px 0px;
 
 }
 
-footer span {
-display: block;
-
-}
-
-footer p {
-color: #737373;
-}
-
-footer .img {
-display: flex;
-justify-content: space-between;
-}
-
-footer .img div {
-background: #FFFFFF;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 45%;
-flex-basis: 30px;
-height: 30px;
-box-shadow: 0px 4px 4px rgba(50, 50, 93, 0.11), 0px 1px 3px rgba(0, 0, 0, 0.08);
-}
-
 .rights {
 margin-bottom: 0;
 color: #8898AA;
@@ -666,14 +604,6 @@ font-size: 14px;
 .img img {
 width: 20px;
 }
-
-footer .footer-logo {
-width: 200px;
-cursor: pointer;
-}
-
-
-
 
 
 
@@ -705,15 +635,6 @@ content: url(./images/Vector.png);
 margin-left: 5px;
 }
 
-footer .footer-logo {
-width: 200px;
-cursor: pointer;
-}
-
-footer .footer-logo img {
-width: 100%;
-
-}
 }
 
 .support {
