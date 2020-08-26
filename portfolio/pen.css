@@ -80,7 +80,7 @@ header #mobile-bars-check
 .symbol
 {
 	font-family: candara, sans serif;
-	font-size: 27px;
+	font-size: 24px;
 	color: crimson;
 	opacity: 0;
 	transition: transform 0.6s ease;
@@ -107,14 +107,14 @@ header #mobile-bars-check
 .project-tile > img
 {
 	width: 100%;
-	height: 100%
+	height: auto;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 .project-tile > .desc
 {
 	font-family: candara, sans serif;
-	font-size: 22px;
+	font-size: 20px;
 	color: rgb(240, 240, 240);
 	padding: 0;
 }
