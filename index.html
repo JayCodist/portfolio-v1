@@ -1,95 +1,155 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Portfolio Page</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Portfolio page of Johnson Ubaezuonu">
-	<meta name="keywords" content="Johnson Ubaezuonu, Full-stack engineer, Nigerian software engineer, Nigeria tech">
-	<meta name="author" content="Johnson Ubaezuonu">
-	<meta name="og:title" content="Johnson Ubaezuonu portfolio">
-	<meta name="og:description" content="Portfolio page of Johnson Ubaezuonu">
-	<meta name="og:url" content="www.johnson-ubaezuonu.com">
-	<meta property="og:image"  content="https://www.johnson-ubaezuonu.com/assets/johnson.jpg">
-	<link rel="icon" type="image/png" href="portfolio-icon.png">
-	<link rel="stylesheet" type="text/css" href="pen.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200i,300,400&amp;display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/ebc06a7cbb.js"></script>
-</head>
-<body>
-	<header>
-		<input type="checkbox" id="mobile-bars-check" />
-	    <label for="mobile-bars-check" id="mobile-bars">
-	        <div class="stix" id="stik1"></div>
-	        <div class="stix" id="stik2"></div>
-	        <div class="stix" id="stik3"></div>
-	    </label>
-		<nav id="navbar">
-			<a href="https://www.johnson-ubaezuonu.com/resume">Resume</a>
-			<a href="#welcome-section">About</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-		</nav>
-	</header>
-	<section id="welcome-section">
-		<h1>Hey I am Johnson</h1>
-		<em>a web developer</em>
-	</section>
-	<section id="projects">
-		<p>Here are a few of my projects:</p>
-		<div id="project-grid">
-			<a class="project-tile" href="https://kwaba-admin.netlify.app" target="_blank" rel="noopener noreferrer">
-				<img src="screenshots/kwaba-dashboard.png" height="200px">
-				<span class="symbol left"><</span>
-				<span class="desc">Demo Admin Dashboards</span>
-				<span class="symbol right">/></span>
-			</a>
-			<a class="project-tile" href="https://rent-bank-staging.netlify.app" target="_blank" rel="noopener noreferrer">
-				<img src="screenshots/rentbank.png" height="200px">
-				<span class="symbol left"><</span>
-				<span class="desc">RentBank</span>
-				<span class="symbol right">/></span>
-			</a>
-			<a class="project-tile" href="https://payup-demo.netlify.app" target="_blank" rel="noopener noreferrer">
-				<img src="screenshots/payup.png" height="200px">
-				<span class="symbol left"><</span>
-				<span class="desc">PayUp</span>
-				<span class="symbol right">/></span>
-			</a>
-			<a class="project-tile" href="https://afriland-properties-v2.netlify.app/" target="_blank" rel="noopener noreferrer">
-				<img src="screenshots/Afriland-2.png" height="200px">
-				<span class="symbol left"><</span>
-				<span class="desc">Afriland Properties</span>
-				<span class="symbol right">/></span>
-			</a>
-			<a class="project-tile" href="https://votewithme-demo.netlify.app" target="_blank" rel="noopener noreferrer">
-				<img src="/assets/vwm.png" height="200px">
-				<span class="symbol left"><</span>
-				<span class="desc">Vote With Me</span>
-				<span class="symbol right">/></span>
-			</a>
-			<a class="project-tile" href="https://pomodoro-clock-hooks.netlify.app/" target="_blank" rel="noopener noreferrer">
-				<img src="https://res.cloudinary.com/jaycodist/image/upload/v1573839957/Pomodoro_x01how.png" height="200px">
-				<span class="symbol left"><</span>
-				<span class="desc">Pomodoro Clock</span>
-				<span class="symbol right">/></span>
-			</a>
-		</div>
-	</section>
-	<section id="contact">
-		<h1>Let's work together. . .</h1>
-		<div id="contact-links">
-			<a href="mailto:jaycodist@gmail.com" target="_blank"><i class="fas fa-at"></i> Email</a>
-			<a href="https://twitter.com/JayCodist" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-			<a href="https://linkedin.com/in/johnson-ubaezuonu-a46149172" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-			<a href="https://github.com/JayCodist" id="profile-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-			<a href="https://stackoverflow.com/users/12011575/jay-codist" id="profile-link" target="_blank">
-				<i class="fab fa-stack-overflow"></i> Stack Overflow
-			</a>
-			<a href="tel:+2347037105262"><i class="fas fa-mobile-alt"></i> Call me</a>
-		</div>
-	</section>
-	<p><strong>&copy 2019 </strong> Johnson Ubaezuonu</p>
-</body>
+  <head>
+    <title>Portfolio Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Portfolio page of Johnson Ubaezuonu" />
+    <meta
+      name="keywords"
+      content="Johnson Ubaezuonu, Full-stack engineer, Nigerian software engineer, Nigeria tech"
+    />
+    <meta name="author" content="Johnson Ubaezuonu" />
+    <meta name="og:title" content="Johnson Ubaezuonu portfolio" />
+    <meta name="og:description" content="Portfolio page of Johnson Ubaezuonu" />
+    <meta name="og:url" content="www.johnson-ubaezuonu.com" />
+    <meta
+      property="og:image"
+      content="https://www.johnson-ubaezuonu.com/assets/johnson.jpg"
+    />
+    <link rel="icon" type="image/png" href="/assets/portfolio-icon.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200i,300,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/df4407bd91.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="mobile-bars-check" />
+      <label for="mobile-bars-check" id="mobile-bars">
+        <div class="stix" id="stik1"></div>
+        <div class="stix" id="stik2"></div>
+        <div class="stix" id="stik3"></div>
+      </label>
+      <nav id="navbar">
+        <a href="https://www.johnson-ubaezuonu.com/resume">Resume</a>
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section id="welcome-section">
+      <h1>Hey I am Johnson</h1>
+      <em>a web developer</em>
+    </section>
+    <section id="projects">
+      <p>Here are a few of my projects:</p>
+      <div id="project-grid">
+        <a
+          class="project-tile"
+          href="https://kwaba-admin.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="screenshots/kwaba-dashboard.png" height="200px" />
+          <span class="symbol left"><</span>
+          <span class="desc">Demo Admin Dashboards</span>
+          <span class="symbol right">/></span>
+        </a>
+        <a
+          class="project-tile"
+          href="https://rent-bank-staging.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="screenshots/rentbank.png" height="200px" />
+          <span class="symbol left"><</span>
+          <span class="desc">RentBank</span>
+          <span class="symbol right">/></span>
+        </a>
+        <a
+          class="project-tile"
+          href="https://payup-demo.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="screenshots/payup.png" height="200px" />
+          <span class="symbol left"><</span>
+          <span class="desc">PayUp</span>
+          <span class="symbol right">/></span>
+        </a>
+        <a
+          class="project-tile"
+          href="https://afriland-properties-v2.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="screenshots/Afriland-2.png" height="200px" />
+          <span class="symbol left"><</span>
+          <span class="desc">Afriland Properties</span>
+          <span class="symbol right">/></span>
+        </a>
+        <a
+          class="project-tile"
+          href="https://votewithme-demo.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/assets/vwm.png" height="200px" />
+          <span class="symbol left"><</span>
+          <span class="desc">Vote With Me</span>
+          <span class="symbol right">/></span>
+        </a>
+        <a
+          class="project-tile"
+          href="https://pomodoro-clock-hooks.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://res.cloudinary.com/jaycodist/image/upload/v1573839957/Pomodoro_x01how.png"
+            height="200px"
+          />
+          <span class="symbol left"><</span>
+          <span class="desc">Pomodoro Clock</span>
+          <span class="symbol right">/></span>
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Let's work together. . .</h1>
+      <div id="contact-links">
+        <a href="mailto:jaycodist@gmail.com" target="_blank"
+          ><i class="fas fa-at"></i> Email</a
+        >
+        <a href="https://twitter.com/JayCodist" target="_blank"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a
+          href="https://linkedin.com/in/johnson-ubaezuonu-a46149172"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="https://github.com/JayCodist" target="_blank"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://stackoverflow.com/users/12011575/jay-codist"
+          target="_blank"
+        >
+          <i class="fab fa-stack-overflow"></i> Stack Overflow
+        </a>
+        <a href="https://www.codewars.com/users/JayCodist" target="_blank">
+          <i class="fa-brands fa-hackerrank"></i> CodeWars
+        </a>
+      </div>
+    </section>
+    <p><strong>&copy 2019 </strong> Johnson Ubaezuonu</p>
+  </body>
 </html>

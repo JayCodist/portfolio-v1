@@ -1,0 +1,329 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 92%;
+}
+body {
+  font-family: "Raleway", candara;
+}
+@media (max-width: 1180px) {
+  html {
+    font-size: 84%;
+  }
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 77%;
+  }
+}
+@media (max-width: 980px) {
+  html {
+    font-size: 68%;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1700px) {
+  html {
+    font-size: 130%;
+  }
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 150%;
+  }
+}
+@media (min-width: 2500px) {
+  html {
+    font-size: 200%;
+  }
+}
+@media (min-width: 2800px) {
+  html {
+    font-size: 215%;
+  }
+}
+@media (min-width: 3000px) {
+  html {
+    font-size: 225%;
+  }
+}
+
+p {
+  text-align: center;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5rem;
+  background-color: rgb(200, 51, 64);
+  box-shadow: 0 0.1rem 0.7rem rgb(10, 10, 30);
+  z-index: 100;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav > a {
+  text-decoration: none;
+  padding: 0.4rem;
+  margin-right: 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: 0.4s ease-out;
+}
+nav > a:visited {
+  color: white;
+}
+nav > a:hover {
+  transform: scale(1.1);
+  color: rgb(200, 200, 200);
+}
+header #mobile-bars {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 5rem;
+  cursor: pointer;
+  display: none;
+}
+
+header .stix {
+  border-radius: 0.2rem;
+  height: 0.2rem;
+  width: 3.5rem;
+  background-color: dimgray;
+  margin: 0.4rem 0;
+  transition: 0.4s ease;
+}
+
+header #mobile-bars-check {
+  display: none;
+}
+.symbol {
+  font-family: candara, sans serif;
+  font-size: 1.6rem;
+  color: transparent;
+  transition: 0.6s ease;
+}
+.project-tile {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgba(20, 20, 20, 0.7);
+  display: block;
+  border-radius: 0.2rem;
+  transition: 0.4s ease;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+.project-tile:hover > .symbol {
+  color: crimson;
+}
+.project-tile:hover {
+  box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.project-tile > img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.project-tile > .desc {
+  font-family: candara, sans serif;
+  font-size: 1.3rem;
+  color: rgb(240, 240, 240);
+  padding: 0;
+}
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  margin-top: 5.9rem;
+  color: rgb(250, 250, 250);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, #3d3d40 0%, #181719 100%);
+  border-radius: 0.3rem;
+  box-shadow: 0 0 2rem rgb(6, 6, 20);
+}
+#welcome-section > h1 {
+  margin-bottom: 0;
+}
+#welcome-section > em {
+  color: rgb(200, 120, 120);
+}
+#projects {
+  margin-top: 0.9rem;
+  background-color: skyblue;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0.7rem;
+  border-radius: 0.3rem;
+}
+#project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  width: 90%;
+  margin-left: 5%;
+}
+#contact {
+  padding: 0.7rem;
+  margin: 1.3rem auto 2rem;
+  text-align: center;
+  background-color: rgb(80, 80, 120);
+  color: rgb(230, 230, 230);
+  font-size: 2rem;
+  border-radius: 1.3rem;
+  box-shadow: 0 0 1.3rem rgb(80, 80, 120);
+}
+#contact a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: inherit;
+  margin: auto 1.3rem;
+  text-shadow: 0 0 0.7rem black;
+  border-radius: 0.3rem;
+  transition: 0.6s transform ease-out;
+  display: inline-block;
+  padding: 0.7rem 0.3rem;
+}
+#contact a:visited {
+  color: inherit;
+}
+#contact a:hover {
+  transform: translateY(0.3rem);
+}
+#contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 860px) {
+  header {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 2.5rem 2rem;
+    height: auto;
+  }
+  header nav {
+    display: flex;
+    padding: 0.4rem 1rem 1rem;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+  }
+  header > a {
+    text-decoration: none;
+    padding: 0.3rem;
+    margin-right: 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: 0.4s ease-out;
+  }
+  header #mobile-bars {
+    display: block;
+    z-index: 10;
+  }
+  header #mobile-bars-check:checked ~ #mobile-bars > #stik1 {
+    transform: rotate(45deg) translateY(0.4rem) translateX(0.3rem);
+  }
+
+  header #mobile-bars-check:checked ~ #mobile-bars > #stik2 {
+    width: 0;
+    opacity: 0;
+  }
+
+  header #mobile-bars-check:checked ~ #mobile-bars > #stik3 {
+    transform: rotate(-45deg) translateY(-0.5rem) translateX(0.5rem);
+  }
+
+  header #mobile-bars-check:checked ~ nav {
+    max-height: 100rem;
+  }
+
+  #welcome-section {
+    height: 50vh;
+    margin-top: 7.2rem;
+    font-size: 1.8rem;
+    border-radius: 0.7rem;
+  }
+  #projects {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+  }
+  #project-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-tile > .desc {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    display: inline-block;
+  }
+  #contact {
+    font-size: 1rem;
+    margin: 1.3rem auto;
+  }
+  #contact #contact-links a {
+    font-size: 1.1rem;
+    margin: auto 1.3rem;
+    padding: 0.7rem 0;
+  }
+}
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  height: 0.6rem;
+  border: 0.4rem solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -0.1rem -0.1rem 0 rgba(0, 0, 0, 0.05),
+    inset 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset -0.1rem -0.1rem 0 rgba(0, 0, 0, 0.05),
+    inset 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
